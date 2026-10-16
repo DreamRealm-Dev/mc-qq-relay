@@ -1,0 +1,100 @@
+{
+  "server_base_url": {
+    "type": "string",
+    "default": "",
+    "description": "MC 模组对外 HTTPS 地址（公网端口，不一定是服务器内网端口）"
+  },
+  "auth_token": {
+    "type": "string",
+    "default": "",
+    "description": "与 MC 服务器 config/mcqq.json 的 sharedSecret 一致的随机长字符串（至少16位）"
+  },
+  "server_cert_path": {
+    "type": "string",
+    "default": "",
+    "description": "服务端自签名证书的 PEM 文件路径（手动交换，用于固定证书防中间人）"
+  },
+  "server_cert_sha256": {
+    "type": "string",
+    "default": "",
+    "description": "可选：服务端证书 SHA-256 指纹（小写十六进制），用于人工核对"
+  },
+  "group_id": {
+    "type": "string",
+    "default": "",
+    "description": "要监听的 QQ 群号"
+  },
+  "platform_id": {
+    "type": "string",
+    "default": "napcat",
+    "description": "AstrBot 平台适配器 ID（与 cmd_config.json 中自定义的名称一致）"
+  },
+  "mc_prefix": {
+    "type": "string",
+    "default": "[MC]",
+    "description": "MC -> QQ 消息前缀"
+  },
+  "poll_timeout": {
+    "type": "int",
+    "default": 25,
+    "description": "长轮询超时秒数（1~120）"
+  },
+  "poll_retry": {
+    "type": "float",
+    "default": 5.0,
+    "description": "轮询失败后的重试等待秒数"
+  },
+  "exclude_self": {
+    "type": "bool",
+    "default": true,
+    "description": "排除机器人自身消息"
+  },
+  "exclude_qq_official_bot": {
+    "type": "bool",
+    "default": true,
+    "description": "排除 QQ 官方机器人账号"
+  },
+  "exclude_official_bot_ids": {
+    "type": "list",
+    "default": [
+      "2854196306",
+      "2854196310"
+    ],
+    "description": "QQ 官方机器人/系统机器人账号列表，可按需调整"
+  },
+  "exclude_user_ids": {
+    "type": "list",
+    "default": [],
+    "description": "额外排除的 QQ 账号列表"
+  },
+  "image_transcription_enabled": {
+    "type": "bool",
+    "default": false,
+    "description": "可选：启用图片转录（需另行接入聊天图片/OCR，当前未配置时仍转发 [图片] 占位）"
+  },
+  "disable_llm_reply": {
+    "type": "bool",
+    "default": true,
+    "description": "转发后阻止 LLM 自动回复"
+  },
+  "chatimage_enabled": {
+    "type": "bool",
+    "default": false,
+    "description": "启用 ChatImages 聊天图片模组适配；需要服务器和客户端都安装 ChatImages"
+  },
+  "chatimage_width": {
+    "type": "int",
+    "default": 320,
+    "description": "ChatImages 图片显示宽度"
+  },
+  "chatimage_height": {
+    "type": "int",
+    "default": 240,
+    "description": "ChatImages 图片显示高度"
+  },
+  "chatimage_info": {
+    "type": "string",
+    "default": "QQ image",
+    "description": "ChatImages 图片说明文字"
+  }
+}

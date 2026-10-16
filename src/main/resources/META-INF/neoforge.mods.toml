@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="mcqq"
+version="${version}"
+displayName="MC QQ Relay"
+description="MC 服务器消息与 QQ 群实时互通（通过 AstrBot）。"
+authors="mcqq"
+
+[[dependencies.mcqq]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.mcqq]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,21.2)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/*
+!build/libs/
+build/libs/*
+!build/libs/*.jar
+
+# Local-only build inputs (third-party jars are NOT redistributed)
+libs/
+local-maven/
+run/
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+Thumbs.db
+Desktop.ini
+
+# Logs / crash dumps
+*.log
+hs_err_pid*.log

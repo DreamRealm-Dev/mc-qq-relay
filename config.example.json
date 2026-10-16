@@ -1,0 +1,20 @@
+{
+  "server_host": "0.0.0.0",
+  "server_port": 25571,
+  "tls_enabled": true,
+  "require_tls": true,
+  "keystore_path": "relay.p12",
+  "keystore_password": "CHANGE_ME",
+  "shared_secret": "CHANGE_ME_16+",
+  "time_skew_ms": 300000,
+  "qq_prefix": "[QQ]",
+  "mc_prefix": "[MC]",
+  "system_name": "系统",
+  "broadcast_player_mc_to_qq": true,
+  "broadcast_system_mc_to_qq": false,
+  "broadcast_qq_to_mc": true,
+  "broadcast_mc_to_qq": true,
+  "poll_timeout": 25,
+  "chatimage_enabled": true,
+  "public_base_url": "https://your-public-domain:port"
+}

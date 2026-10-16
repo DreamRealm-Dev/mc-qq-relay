@@ -1,0 +1,4 @@
+name: mc_qq_relay
+desc: MC 服务器 <-> QQ 群消息实时互通（AstrBot 主动出站连接）
+author: mcqq
+version: 1.2.1
