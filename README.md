@@ -127,12 +127,12 @@ disable_llm_reply      true
 ### 4. 构建与安装
 
 ```bash
-cd H:\mod\mc-qq-relay
-set JAVA_HOME=H:\mod\jdk21\jdk-21.0.12.1+1
+# 需要 JDK 21
+set JAVA_HOME=<你的 JDK 21 路径>
 gradlew.bat build
 ```
 
-产物：`build/libs/mc-qq-relay-1.1.0.jar`，放入服务器 `mods/`，重启后把 `config/mcqq.json` 和 `relay.p12`、`relay_cert.pem` 放好。
+产物：`build/libs/mc-qq-relay-1.2.4.jar`，放入服务器 `mods/`，重启后把 `config/mcqq.json` 和 `relay.p12`、`relay_cert.pem` 放好。
 
 ### 5. 验证
 
